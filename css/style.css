@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef4ff;
+    color: #172033;
+}
+
+.app {
+    min-height: 100vh;
+}
+
+.page {
+    display: none;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+.page.active {
+    display: block;
+}
+
+#homePage {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.logo {
+    font-size: 70px;
+    margin-top: 30px;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 38px;
+}
+
+h2 {
+    margin: 8px 0;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccd5e3;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #1456b8;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 14px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary {
+    width: 100%;
+    margin-top: 20px;
+    background: #1456b8;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #0e438f;
+}
+
+.btn-secondary {
+    background: #e8eef8;
+    color: #172033;
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.btn-back {
+    background: #1456b8;
+    color: white;
+}
+
+.scan-card {
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.qr-icon {
+    font-size: 70px;
+}
+
+.exam-page {
+    padding: 0;
+}
+
+.exam-header {
+    height: 65px;
+    background: #1456b8;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.exam-header div {
+    display: flex;
+    flex-direction: column;
+}
+
+.exam-header small {
+    margin-top: 4px;
+    opacity: .85;
+}
+
+.btn-exit {
+    background: white;
+    color: #a00000;
+}
+
+.form-placeholder {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.warning {
+    color: #a00000;
+    font-weight: bold;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.65);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-box {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.modal-buttons button {
+    width: 50%;
+}
+
+.error {
+    color: #c00000;
+    min-height: 25px;
+    margin-top: 10px;
+}
